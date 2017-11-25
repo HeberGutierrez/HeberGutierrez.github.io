@@ -1,31 +1,131 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first webpage!</title>
-  </head>
-  <body>
-    <h1 style="text-align:center;">My First Webpage</h1>
-    <h2 style="text-align:center;">Written with a little guidance from Hola Code BootCamp</h2>
+<html lang="en">
 
-    <p>Hello, world!</p>
-    <p>Welcome to my first Web page!</p>
+<head>
+  <title>HG-WEBSITE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <p>Here are some things I'm going to lear about coding:</p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>And a lot more!</li>
-    </ul>
-    <h5>Other webpages</h5>
-    <ul>
-      <li><a href="./my-favorite-things.html">MY FAVORITE THINGS</a></li>
-      <li><a href="./pets-wsite.html">PET WEBSITE<a></li>
-    </ul>
-    <img src="./pics/coding.png"
-         alt="coding-pic"
-         style="width:600px; heigth:600px;"/>
-    <br><br>
-    <h6 style="text-align:center">Copyright HG</h6>
-  </body>
+    body {
+      margin: 0;
+    }
+
+    /* Style the header */
+
+    .header {
+      background-color: #f1f1f1;
+      background-image: url("pics/keepcalmandcoding.png");
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Create three unequal columns that floats next to each other */
+
+    .column {
+      float: left;
+      padding: 10px;
+      height: 450px;
+
+    }
+
+    /* Left and right column */
+
+    .column.side {
+      width: 30%;
+    }
+
+    /* Middle column */
+
+    .column.middle {
+      width: 40%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+
+    .footer {
+      background-color: #f1f1f1;
+      background-image: url("pics/keepcalmandcoding.png");
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+    @media (max-width: 600px) {
+      .column.side,
+      .column.middle {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+     <h2 class="index-tittle">HI! EVERYBODY</h2>
+     <h3 class="index-h3">My name is Heber Isaac Gutiérrez Ponce</h3>
+     <p style="text-align:center">In this time, i will tell you somethings about me. Also i sharing my personal achievements on Hola Code Program I'm so excited about the speed to how i learn a lot on very short time.
+     </p>
+   </div>
+
+   <div class="row">
+     <div class="column side" style="background-color:#0064b0;">
+       <h3 class="h3-csl">MY FIRST WEB PAGES</h3>
+       <em>the last link was my first web and the top link is my last web</em>
+       <ul>
+         <li><a href="./my-favorite-things.html" class="button2">MY FAVORITES THINGS</a></li>
+         <li><a href="./pets-wsite.html" class="button3">PETS WEBSITE</a></li>
+         <li><a href="./fwpage.html" class="button4">FIRST WEB PAGE</a></li>
+       </ul>
+     </div>
+     <div class="column middle" style="background-color:#0064b0;">
+       <h3 class="h3-csl">RESUME</h5>
+         <img src="./pics/pic1.png" alt="mypic" width="50px" height="50px"/>
+         <ul>
+           <li><strong>FULL NAME: </strong><em>Heber Isaac Gutiérrez Ponce</li>
+           <li><strong>NATIONALITY: </strong><em>Guatemalan</li>
+           <li><strong>AGE: </strong><em>27 Years Old</li>
+           <li><strong>E-MAIL: </strong><em>hebergutierrez.p@gmail.com</li>
+           <li><strong>STATUS: </strong><em>Single</li>
+           <li><strong>GENDER: </strong><em>Male</li>
+         </ul>
+     </div>
+     <div class="column side" style="background-color:#0064b0;">
+       <h3 class="h3-csl">INFO</h5>
+         <ol>
+           <li>FIRST JOB:  <em>4 Years on a Bank, like a researching and support on IT Department</li>
+           <li>SECOND JOB: <em>2 Years on a Sales Company, like a IT Manager</li>
+           <li>EXPERIENCE: <em>
+               <li>TECHNICAL SUPPORT</li>
+               <li>DATA CENTER INFRASTRUCTURE</li>
+               <li>DESKTOP AND SERVER VIRTUALIZATION WITH VMWARE AND CITRIX</li>
+               <li>SAN INFRASTRUCTURE</li>
+               <li>BACKUP AND LOCAL SECURITY</li>
+               <li>SECURITY POLICIES</li>
+               <li>LINUX SERVERS</li>
+               <li>MICROSOFT SHAREPOINT - WINDOWS SERVER - EXCHANGE SERVER - SQL SERVER...</li>
+           </li>
+         </ol>
+     </div>
+   </div>
+
+   <div class="footer">
+     <h5>Copyright HG</h5>
+     <h6 style="text-align:center">IF YOU WANT... YOU CAN...</h6>
+   </div>
+</body>
+
 </html>
